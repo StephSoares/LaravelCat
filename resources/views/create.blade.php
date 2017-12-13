@@ -5,7 +5,7 @@
   <div class="title-3">
     <h1>Insertion d'un nouveau chat</h1>
   </div>
-  <div class="formulaire">
+  <div class="formulaire background">
     {!! Form::open(['url' => '/cat/insert']) !!}
       <div class="flex-group">
         {{{ Form::label('Nom :') }}}
@@ -36,9 +36,4 @@
       </div>
     {!! Form::close() !!}
   </div>
-    <div class="background">
-    </div>
-    <div class="image">
-      <img src="/image/garfield-172.png" alt="cat">
-    </div>
 @endsection

@@ -13,6 +13,7 @@
 
 Route::get('/', 'BaseController@index');
 Route::get('/create', 'CreateController@index');
+Route::get('/table', 'TableController@index');
 
 Route::post('/cat/insert', 'CatController@insertOne');
 Route::post('/cat/update', 'CatController@updateOneAction');

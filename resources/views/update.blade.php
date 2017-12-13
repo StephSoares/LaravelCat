@@ -5,7 +5,7 @@
   <div class="title-3">
     <h1>Modification des infos sur le chat</h1>
   </div>
-    <div class="formulaire">
+    <div class="formulaire background">
       {!! Form::open(['url' => '/cat/update']) !!}
         {{{ Form::hidden('id', $cat->id)}}}
         <div class="flex-group">
@@ -36,10 +36,5 @@
           {{{ Form::submit('Modifiez les infos du chat') }}}
         </div>
       {!! Form::close() !!}
-    </div>
-    <div class="background">
-    </div>
-    <div class="image">
-      <img src="/image/garfield-172.png" alt="cat">
     </div>
 @endsection

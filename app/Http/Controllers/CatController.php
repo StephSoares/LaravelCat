@@ -19,14 +19,14 @@ class CatController extends Controller
       $cat->gender_id = $request->gender;
       $cat->save();
       $cat->colors()->attach($request->color);
-      return redirect('/');
+      return redirect('/table');
     }
     public function deleteOne(Request $request, $id)
     {
       $cat = Cat::find($id);
       $cat->colors()->detach();
       $cat->delete();
-      return redirect('/');
+      return redirect('/table');
     }
     public function updateOne(Request $request, $id)
     {
@@ -54,6 +54,6 @@ class CatController extends Controller
       $cat->colors()->detach();
       $cat->colors()->attach($request->color);
       $cat->save();
-      return redirect('/');
+      return redirect('/table');
     }
 }
