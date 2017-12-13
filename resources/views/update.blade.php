@@ -22,7 +22,7 @@
         </div>
         <div class="flex-group">
           {{{ Form::label('Âge (en mois) :') }}}
-          {{{ Form::number('age', $cat->Age) }}}
+          {{{ Form::number('age', $cat->age) }}}
         </div>
         <div class="flex-group">
           {{{ Form::label('Sexe :') }}}

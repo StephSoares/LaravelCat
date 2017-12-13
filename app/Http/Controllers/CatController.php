@@ -43,13 +43,13 @@ class CatController extends Controller
       }
       return view('update', ['genders' => $genders, 'colors' => $colors, 'cat' => $cat]);
     }
-    public function updateOneAction(Request $request, $id)
+    public function updateOneAction(Request $request)
     {
-      $cat = Cat::find($id);
+      $cat = Cat::find($request->id);
       $cat->name = $request->name;
       $cat->size = $request->size;
       $cat->weight = $request->weight;
-      $cat->age = $request->Age;
+      $cat->age = $request->age;
       $cat->gender_id = $request->gender;
       $cat->colors()->detach();
       $cat->colors()->attach($request->color);

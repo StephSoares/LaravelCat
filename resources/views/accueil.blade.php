@@ -9,7 +9,7 @@
     <h3>Voici la liste des chats :</h3>
   </div>
   <div class="tableau">
-    <table class="table table-bordered table-striped">
+    <table class="table table-bordered table-striped table-responsive">
       <thead class="head">
         <tr>
             <th>Nom</th>
@@ -22,7 +22,7 @@
             <th>Mise à jour</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody class="background_body">
         @foreach ($cats as $cat)
           <tr>
               <td>{{ $cat->name }}</td>
